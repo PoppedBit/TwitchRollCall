@@ -18,7 +18,7 @@ def main(argv):
         users = twitch.getChannelChatters(channel)
 
         f = open("data/"+currentDate+".json", "a")
-        f.write(currentTime+" "+' '.join(users))
+        f.write(currentTime+" "+' '.join(users)+"\n")
         f.close()
         
         time.sleep(runInterval)
