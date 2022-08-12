@@ -24,7 +24,8 @@ def getChannelChatters(channel):
             for user in chatters[category]:
                 if(user != channel and user not in knownBots): 
                     users.append(user)
+        users.sort()
         return users
     else:
-        return[]
+        return []
 
